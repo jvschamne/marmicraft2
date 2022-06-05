@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#logo {
+    margin-top: 5rem;
+    height: 30%;
+    width: 30%;
+}
+
+h3 {
+    color: rgb(224, 101, 64);
+}
+
+body {
+    background-color: #fcc40d;
+}
+
+.main-text {
+    color: blanchedalmond;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#headline {
+    color: blanchedalmond;
+    font-size: 5rem;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+}
+
+#subheadline {
+    color: blanchedalmond;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+    text-align: center;
+}
+
+#container1 {
+    margin-top: 5vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    cursor: default;
+    /*flex-direction: column;*/
+    justify-content: center;
+}
+
+#divbotao {
+    margin-top: 5vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao {
+    color: rgb(224, 101, 64);
+    background-color: blanchedalmond;
+    border-radius: 30px;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#botao:hover {
+    transition: all 0.5s ease;
+    animation: reverse 2s;
+    box-shadow: 0 0.4rem 2.4rem 0 rgba(216, 28, 28, 0.623);
+    transform: scale(1.05);
+}
+
+.item-navbar {
+    color: rgb(224, 101, 64);
+    text-decoration: none;
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.item-navbar-signup {
+    background-color: rgb(224, 101, 64);
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 2rem;
+    width: 100%;
+    padding: 0.3rem;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.item-navbar:hover {
+    transition: all 0.5s ease;
+    animation: reverse 2s;
+    color: white;
+}
+
+.item-navbar-signup:hover {
+    transition: all 0.5s ease;
+    animation: reverse 2s;
+    background-color: blanchedalmond;
+    color: rgb(224, 101, 64);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.borrado {
+    filter: blur(5px);
+}
+
+#login-text {
+    color: rgb(224, 101, 64);
+    text-align: center;
+}
+
+.loginform,
+.signupform {
+    background-color: blanchedalmond;
+    position: absolute;
+    left: 38%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 50vw;
+    max-height: 80vh;
+}
+
+form {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 20vw;
+    font-size: 1rem;
+    border: unset;
+    outline: none;
+    left: 0;
+    background-color: blanchedalmond;
+}
+
+#input-border {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 20vw;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #40e0d0, #5C9691);
+}
+
+.campo {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.campo:first-child {
+    margin-bottom: 1.5rem;
+}
+
+#cadastro-text {
+    margin-top: 5vh;
+    color: #965c5c;
+    text-align: center;
+}
+
+#submitlogin,
+#submitsignup {
+    color: rgb(224, 101, 64);
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+#submitlogin:hover,
+#submitsignup:hover {
+    color: blanchedalmond;
+    background-color: rgb(224, 101, 64);
+    transition: all 0.5s ease;
+    animation: reverse 2s;
+}
+
+#closeform {
+    font-size: 1.5rem;
+    position: relative;
+    align-self: flex-end;
+    color: #5C9691;
+    cursor: pointer;
+}
+
+#close:hover {
+    transition: all 0.5s ease;
+    animation: reverse 2s;
+    transform: scale(1.2);
+}
+
+.pop-up-animation {
+    animation-name: popup-animation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popup-animation {
+    from {
+        transform: translateY(10vh)
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+#nav-items a {
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+@media (min-width:320px) {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    #cadastro-text {
+        font-size: 1rem;
+    }
+    .container1 {
+        flex-direction: column;
+    }
+    .item-navbar {
+        font-size: 1rem;
+    }
+    .item-navbar-signup {
+        font-size: 1rem;
+    }
+    #headline {
+        font-size: 2rem;
+    }
+    #subheadline {
+        font-size: 1rem;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+    }
+    #login-popup {
+        top: 20vh;
+        max-width: 90vw;
+        margin-left: 5vw;
+    }
+}
+
+@media (min-width:481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    #cadastro-text {
+        font-size: 1rem;
+    }
+    .container1 {
+        flex-direction: column;
+    }
+    .item-navbar {
+        font-size: 1rem;
+    }
+    .item-navbar-signup {
+        font-size: 1rem;
+    }
+    #headline {
+        font-size: 2rem;
+    }
+    #subheadline {
+        font-size: 1rem;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+    }
+    #login-popup {
+        top: 20vh;
+        max-width: 90vw;
+        margin-left: 5vw;
+    }
+}
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    #cadastro-text {
+        font-size: 1rem;
+    }
+    .container1 {
+        flex-direction: column;
+    }
+    .item-navbar {
+        font-size: 1rem;
+    }
+    .item-navbar-signup {
+        font-size: 1rem;
+    }
+    #headline {
+        font-size: 2rem;
+    }
+    #subheadline {
+        font-size: 1rem;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+    }
+    #login-popup {
+        top: 20vh;
+        max-width: 90vw;
+        margin-left: 5vw;
+    }
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .container1 {
+        flex-direction: row;
+    }
+    .item-navbar {
+        font-size: 1.5rem;
+    }
+    .item-navbar-signup {
+        font-size: 1.5rem;
+    }
+    #headline {
+        font-size: 4rem;
+    }
+    #subheadline {
+        font-size: 1.7rem;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+        width: 80%;
+    }
+    #navbar {
+        position: absolute;
+        right: 20vh;
+        top: 2vh;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #login-popup {
+        top: 20vh;
+        max-width: 90vw;
+        margin-left: 5vw;
+    }
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    .container1 {
+        flex-direction: row;
+    }
+    #headline {
+        font-size: 3.5rem;
+    }
+    #subheadline {
+        font-size: 2rem;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+        width: 80%;
+    }
+    #navbar {
+        position: absolute;
+        right: 20vh;
+        top: 2vh;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #login-popup {
+        top: 17vh;
+        max-width: 90vw;
+        margin-left: 5vw;
+    }
+    .item-navbar {
+        font-size: 1.5rem;
+    }
+    .item-navbar-signup {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+    .container1 {
+        flex-direction: row;
+    }
+    #headline {
+        font-size: 4rem;
+    }
+    #subheadline {
+        font-size: 1.7rem;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+        width: 80%;
+    }
+    #navbar {
+        position: absolute;
+        right: 20vh;
+        top: 2vh;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-navbar {
+        font-size: 1.5rem;
+    }
+    .item-navbar-signup {
+        font-size: 1.5rem;
+    }
+}
